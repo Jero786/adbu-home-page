@@ -1,0 +1,23 @@
+.grid-icon {
+
+	padding: 1em;
+
+	&__icon {
+		overflow: hidden;
+		background-size: cover;
+		height: 100px;
+		width: 100px;
+		padding: 1em;
+
+	}
+
+	&__title {
+		background-color: white;
+		padding: 1em;
+		text-align: center;
+	}
+
+	&__body {
+		background-color: yellow;
+	}
+}

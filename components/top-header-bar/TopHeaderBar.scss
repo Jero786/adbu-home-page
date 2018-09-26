@@ -1,0 +1,27 @@
+.adbu-top-header-bar {
+
+	display: flex;
+	position: relative;
+
+	&__logo {
+		background: url('/static/images/logo-white.svg') no-repeat;
+		padding: 40px;
+		position: absolute;
+		z-index: 10;
+		top: 50px;
+		left: 50px;
+	}
+
+	&__burger {
+		background: url('/static/images/menu-three-lines.svg') no-repeat;
+		padding: 15px;
+		position: absolute;
+		z-index: 10;
+		top: 50px;
+		right: 50px;
+
+		&.is-open {
+			background: url('/static/images/menu-lines-open.svg') no-repeat;
+		}
+	}
+}

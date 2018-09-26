@@ -1,0 +1,42 @@
+@import '../../../commons/commons';
+
+.home-header {
+
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5em;
+	background: url("/static/images/home-header.png") no-repeat center center fixed;
+	overflow: hidden;
+	background-size: cover;
+	height: 100vh;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/home-header.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/home-header.png', sizingMethod='scale')";
+
+	&__title {
+		color: $white;
+		text-align: center;
+		font-size: 1.4em;
+	}
+
+	&__scroll-down {
+		background-color: $picton-blue;
+		border-radius: 50%;
+		font-size: 2em;
+		height: .5em;
+		width: .5em;
+		position: absolute;
+		bottom: 20vh;
+
+		&:before {
+			background: url('/static/images/arrow-down.svg') no-repeat;
+			content: '';
+			position: absolute;
+			top: 9px;
+			left: 6px;
+			padding: 6px;
+		}
+	}
+}

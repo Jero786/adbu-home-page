@@ -1,0 +1,33 @@
+@import '../../../commons/commons';
+
+.learn-more {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: url('/static/images/learn-more-bg.png') no-repeat ;
+	background-position-y: 282px;
+	background-size: contain;
+	padding-bottom: 160px;
+
+	&__title {
+		color: $matisse;
+		font-size: 2em;
+	}
+
+	&__body {
+		color: $gray;
+		padding: 0 5em 1em 5em;
+	}
+
+	&__button {
+		color: $gray;
+		border-radius: 15px;
+		padding: 1em 2em;
+		line-height: .7em;
+		border: solid 1px $matisse;
+		font-style: normal;
+	}
+}
