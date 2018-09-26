@@ -1,7 +1,7 @@
 # ADBU home page (WIP)
 
-[![Build Status](https://travis-ci.com/Jero786/react-redux-next-example.svg?branch=master)](https://travis-ci.com/Jero786/react-redux-next-example)
-[![Coverage Status](https://coveralls.io/repos/github/Jero786/react-next-example/badge.svg?branch=master)](https://coveralls.io/github/Jero786/react-next-example?branch=master)
+[![Build Status](https://travis-ci.org/Jero786/adbu-home-page.svg?branch=master)](https://travis-ci.org/Jero786/adbu-home-page)
+[![Coverage Status](https://coveralls.io/repos/github/Jero786/adbu-home-page/badge.svg?branch=master)](https://coveralls.io/github/Jero786/adbu-home-page?branch=master)
 
 ### Prerequisites
 
