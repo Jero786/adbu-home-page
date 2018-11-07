@@ -7,7 +7,9 @@ export default class HomeHeader extends React.PureComponent {
   <div className="home-header">
     <div className="home-header__title">
 					INNOVATION AND CREATIVE
-      <br />
+				
+    </div>
+    <div className="home-header__subtitle">
 					DESIGN FOR YOUR APPS
 				
     </div>

@@ -4,8 +4,10 @@ $black: rgba(0, 0, 0, 0.85);
 
 $grayLighter: #f4f4f4;
 $gray: #808B97;
-$matisse: #1B6A9A;
+$matisse: #1A6B9C;
+$firefly: #0F1F2F;
 $picton-blue: #49BEED;
+
 
 /* Mixins */
 @mixin soft-shadow {
@@ -16,6 +18,29 @@ $picton-blue: #49BEED;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
+@mixin description-article {
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+	font-weight: 300;
+	line-height: 1.4em;
+}
+
+@mixin title-article {
+	color: #fff;
+	font-size: 3em;
+	font-weight: 100;
+	padding: .5em 1em;
+}
+
+@mixin article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 1.1em;
+}
 
 @mixin bp($min: 0, $max: 0) {
   $type: type-of($min);

@@ -13,7 +13,23 @@ describe('HomeHeader', () => {
 		const wrapper = render(<HomeHeader />);
 
 		expect(wrapper.hasClass('home-header')).to.be.true;
+	});
+
+	it('should contain title', function () {
+		const wrapper = render(<HomeHeader />);
+
 		expect(wrapper.find('.home-header__title')).to.have.lengthOf(1);
+	});
+
+	it('should contain a subtitle', function () {
+		const wrapper = render(<HomeHeader />);
+
+		expect(wrapper.find('.home-header__subtitle')).to.have.lengthOf(1);
+	});
+
+	it('should contain a scroll down button', function () {
+		const wrapper = render(<HomeHeader />);
+
 		expect(wrapper.find('.home-header__scroll-down')).to.have.lengthOf(1);
 	});
 

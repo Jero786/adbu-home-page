@@ -1,26 +1,49 @@
 @import '../../../commons/commons';
 
 .studios {
-	width: 100%;
+
+	@include article();
 
 	&__title {
-		margin: 0;
-		padding: 1em 0 0 0;
-		font-size: 2em;
-
-		text-align: center;
 		color: $matisse;
+		font-size: 4em;
+		font-weight: 100;
+		padding-top: 1em;
 	}
 
 	&__description {
 		text-align: center;
+		font-size: 1.5em;
 		color: $gray;
+		font-weight: 100;
 	}
 
 	&__list {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 2em;
+
+		.grid-icon {
+			color: $gray;
+			font-size: 1.2em;
+		}
 	}
+
+	&__header {
+
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 2em 4em;
+		width: 100%;
+		font-size: 1.5em;
+		color: #fff;
+		font-weight: 100;
+
+		background-color: $firefly;
+	}
+
 }

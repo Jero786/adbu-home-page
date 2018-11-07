@@ -1,33 +1,51 @@
 @import '../../../commons/commons';
 
 .learn-more {
-	height: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background: url('/static/images/learn-more-bg.png') no-repeat ;
-	background-position-y: 282px;
-	background-size: contain;
-	padding-bottom: 160px;
+	@include article();
+
+	background: url('/static/images/learn-more-bg.svg') no-repeat center center fixed;
+	background-size: cover;
 
 	&__title {
-		color: $matisse;
-		font-size: 2em;
+		color: #fff;
+		font-size: 4em;
+		font-weight: 100;
+		padding-top: 1em;
+	}
+
+	&__description {
+		@include description-article();
 	}
 
 	&__body {
-		color: $gray;
-		padding: 0 5em 1em 5em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 5em;
+
+		align-items: center;
+		text-align: center;
+		color: $white;
+		max-width: 600px;
+
+		width: 100%;
 	}
 
 	&__button {
-		color: $gray;
-		border-radius: 15px;
+		transition: all .3s;
+		color: #ffffff;
+		margin-top: 1em;
 		padding: 1em 2em;
 		line-height: .7em;
-		border: solid 1px $matisse;
-		font-style: normal;
+		border: solid 1px #ffffff;
+		font-size: 1.5em;
+		cursor: pointer;
+		background: transparent;
+
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.24);
+		}
 	}
+
 }
