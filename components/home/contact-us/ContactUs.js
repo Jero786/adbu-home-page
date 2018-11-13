@@ -18,7 +18,6 @@ export default class ContactUs extends React.PureComponent {
       <div className="contact-us__header-description">
 						In Adbu we hold a passion for innovation, brilliant ideas and the execution that brings them all together in
 						one beautiful experience
-
       </div>
     </div>
     <div className="contact-us__body">

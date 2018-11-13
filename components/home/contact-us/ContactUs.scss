@@ -24,18 +24,17 @@ $max-content-width: 920px;
 
 		&-description {
 			font-size: 2em;
-			@include padding-text();
-			padding-top: 0;
 			font-weight: 100;
+			padding: 2em 7% 4em 7%;
 		}
 	}
 
 	&__body {
-		max-width: $max-content-width;
 		margin: 0 auto;
 		@include center();
-		padding-bottom: 7em;
 		color: $white;
+		padding: 2em 2em 7em 2em;
+		background-color: rgba(0, 0, 0, 0.34901960784313724);
 
 		@include bp(xs) {
 			flex-wrap: wrap;

@@ -22,6 +22,7 @@
 		text-align: center;
 		font-size: 2.6em;
 		font-weight: 100;
+		letter-spacing: -3px;
 
 		@include bp(xs) {
 			font-size: 2em;
@@ -29,12 +30,13 @@
 	}
 
 	&__subtitle {
-		padding-top: 1em;
+		padding-top: .5em;
 		font-size: 1.6em;
 		font-weight: 100;
 
 		color: $white;
 		text-align: center;
+		letter-spacing: -1px;
 
 		@include bp(xs) {
 			padding-top: 2em;

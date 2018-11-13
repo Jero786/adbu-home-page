@@ -17,8 +17,9 @@
 
 	&__description {
 		text-align: center;
-		font-size: 1.5em;
+		padding: 0 7% 2em 7%;
 		color: $gray;
+		font-size: 1.7em;
 		font-weight: 100;
 		margin: 0;
 
@@ -26,8 +27,6 @@
 			font-size: 2em;
 			padding-top: 0;
 		}
-
-		@include padding-text();
 	}
 
 	&__list {
