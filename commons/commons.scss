@@ -8,6 +8,28 @@ $matisse: #1A6B9C;
 $firefly: #0F1F2F;
 $picton-blue: #49BEED;
 
+$padding-left-right: 12%;
+$padding-left-right-mobile: 5%;
+
+@mixin padding-text {
+	padding: 3em $padding-left-right;
+
+	@include bp(md) {
+		padding: 2em $padding-left-right-mobile + 4%;
+	}
+	@include bp(sm) {
+		padding: 2em $padding-left-right-mobile + 2%;
+	}
+	@include bp(xs) {
+		padding: 2em $padding-left-right-mobile;
+	}
+}
+
+@mixin center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 /* Mixins */
 @mixin soft-shadow {
@@ -22,7 +44,7 @@ $picton-blue: #49BEED;
 	text-align: center;
 	font-size: 2em;
 	color: #fff;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 1.4em;
 }
 
@@ -55,18 +77,18 @@ $picton-blue: #49BEED;
     }
 
     @else if $min == sm {
-      @media (min-width: 768px) { @content; }       // Tablet Devices
+      @media (min-width: 768px) and (max-width: 992px) { @content; }       // Tablet Devices
     }
 
     @else if $min == md {
-      @media (min-width: 992px) { @content; }       // Desktops
+      @media (min-width: 993px) and (max-width: 1199px) { @content; }       // Desktops
     }
 
     @else if $min == lg {
-      @media (min-width: 1200px) { @content; }       // Desktops
+      @media (min-width: 1200px) { @content; }       // Desktops Large
     }
-
   }
+
   @else if $type == number {
     // Allow for custom parameters for min and max size
     $query: "all" !default;

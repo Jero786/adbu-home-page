@@ -32,4 +32,10 @@ describe('HomePage', () => {
 
 		expect(wrapper.find('.studios')).to.have.lengthOf(1);
 	});
+
+	it('should contain a contact us section', function () {
+		const wrapper = render(<HomePage />);
+
+		expect(wrapper.find('.contact-us')).to.have.lengthOf(1);
+	});
 });

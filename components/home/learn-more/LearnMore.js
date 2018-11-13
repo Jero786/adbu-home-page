@@ -1,4 +1,8 @@
+// Resources
 import './LearnMore.scss';
+import 'components/button/Button.scss';
+
+// Libs
 import React from 'react';
 
 export default class LearnMore extends React.PureComponent {

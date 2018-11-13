@@ -1,0 +1,22 @@
+@import '../../commons/commons';
+
+.adbu-footer {
+	@include center();
+	flex-direction: column;
+	color: $white;
+
+	font-size: 1.4em;
+	background: url("/static/images/home-header.svg") fixed;
+	height: 40vh;
+
+	&__logo {
+		background: url(/static/images/logo-white.svg) no-repeat;
+		padding: 40px;
+	}
+
+	&__description {
+		padding: 1em;
+	}
+	&__copyright {}
+
+}

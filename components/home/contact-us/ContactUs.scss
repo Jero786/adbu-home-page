@@ -1,0 +1,66 @@
+@import '../../../commons/commons';
+
+$max-content-width: 920px;
+
+.contact-us {
+	background: url("/static/images/table-computer-bg.svg") no-repeat center center fixed;
+	background-size: cover;
+
+	@include bp(xs) {
+		background-position-x: -800px;
+	}
+
+	&__header {
+		margin: 0 auto;
+		color: $white;
+		max-width: $max-content-width;
+		text-align: center;
+
+		&-title {
+			@include padding-text();
+			font-size: 4em;
+			margin-bottom: -1em;
+		}
+
+		&-description {
+			font-size: 2em;
+			@include padding-text();
+			padding-top: 0;
+			font-weight: 100;
+		}
+	}
+
+	&__body {
+		max-width: $max-content-width;
+		margin: 0 auto;
+		@include center();
+		padding-bottom: 7em;
+		color: $white;
+
+		@include bp(xs) {
+			flex-wrap: wrap;
+		}
+
+		&-half-side {
+			width: 45%;
+			text-align: center;
+
+			@include bp(xs) {
+				width: 90%;
+			}
+		}
+
+		&-title {
+			font-size: 2em;
+			padding: 2em;
+		}
+
+		&-submit {
+		}
+	}
+
+	&__footer {
+		//background: url("/static/images/map-bg.png") fixed;
+		//height: 40vh;
+	}
+}

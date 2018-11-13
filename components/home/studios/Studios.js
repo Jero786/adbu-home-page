@@ -8,13 +8,11 @@ export default class Studios extends React.PureComponent {
 		return (
   <article className="studios">
     <h1 className="studios__title">ADBU ESTUDIO</h1>
-    <div className="studios__header">
-      <p className="studios__description">
-						Adbu is divided into studios to organize and group in a better shape our
-						delivery
-					
-      </p>
-    </div>
+    <p className="studios__description">
+					Adbu is divided into studios to organize and group in a better shape our
+					delivery
+				
+    </p>
     <div className="studios__list">
       <GridIcons>
         <GridIcon title="MOBILE STUDIO" imageSrc="/static/images/studio-mobile.png" />
@@ -24,8 +22,14 @@ export default class Studios extends React.PureComponent {
       </GridIcons>
     </div>
     <div className="studios__footer">
-					Adbu helps you to create the most innovative and everywhere Apps focus on creative design and best techs practices. One App for your phone, tablet or Smart TV
-				
+      <div className="studios__footer-header">
+						Adbu helps you to create the most innovative and everywhere Apps focus on creative design and best techs
+						practices. One App for your phone, tablet or Smart TV
+					
+      </div>
+      <div className="studios__footer-content">
+        <img src="/static/images/devices.svg" alt="devices" />
+      </div>
     </div>
   </article>
 		);

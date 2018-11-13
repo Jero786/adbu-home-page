@@ -11,13 +11,15 @@
     "build": "next build",
     "start": "next start",
     "precommit": "lint-staged",
-    "defaults": "webpack-defaults"
+    "defaults": "webpack-defaults",
+    "deploy": "next build && next export && touch out/.nojekyll && push-dir --dir=out --branch=master --cleanup --verbose --remote=github-io"
   },
   "author": "Jeronimo Carrizo <jero.carrizo@gmail.com> (https://twitter.com/jero786)",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-css": "^1.0.2-canary.0",
     "@zeit/next-sass": "1.0.1",
-    "next": "7.0.2",
+    "next": "^7.0.2-canary.21",
     "next-optimized-images": "1.4.1",
     "node-sass": "4.9.3",
     "react": "16.5.2",
@@ -49,6 +51,7 @@
     "lint-staged": "^7.2.2",
     "next-compose-plugins": "^2.1.1",
     "prettier-eslint": "^8.8.2",
+    "push-dir": "^0.4.1",
     "react-addons-test-utils": "15.6.2",
     "react-test-renderer": "16.2.0",
     "sinon": "^6.1.5"

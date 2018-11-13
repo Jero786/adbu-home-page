@@ -15,6 +15,7 @@
 
 	&__description {
 		@include description-article();
+		@include padding-text();
 	}
 
 	&__body {
@@ -32,20 +33,6 @@
 	}
 
 	&__button {
-		transition: all .3s;
-		color: #ffffff;
-		margin-top: 1em;
-		padding: 1em 2em;
-		line-height: .7em;
-		border: solid 1px #ffffff;
-		font-size: 1.5em;
-		cursor: pointer;
-		background: transparent;
-
-
-		&:hover {
-			background-color: rgba(255, 255, 255, 0.24);
-		}
 	}
 
 }

@@ -28,12 +28,6 @@ describe('Studios', () => {
 		expect(wrapper.find('.grid-icon__title').eq(3).text()).to.equal('CREATIVE STUDIO');
 	});
 
-	it('should have header section', function () {
-		const wrapper = render(<Studios />);
-
-		expect(wrapper.find('.studios__header')).to.have.lengthOf(1);
-	});
-
 	it('should have a footer section', function () {
 		const wrapper = render(<Studios />);
 

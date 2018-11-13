@@ -13,11 +13,19 @@
 	background-size: cover;
 	height: 100vh;
 
+	@include bp(xs) {
+		height: 80vh;
+	}
+
 	&__title {
 		color: $white;
 		text-align: center;
 		font-size: 2.6em;
 		font-weight: 100;
+
+		@include bp(xs) {
+			font-size: 2em;
+		}
 	}
 
 	&__subtitle {
@@ -27,6 +35,11 @@
 
 		color: $white;
 		text-align: center;
+
+		@include bp(xs) {
+			padding-top: 2em;
+			font-size: 1em;
+		}
 	}
 
 	&__scroll-down {

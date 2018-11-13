@@ -1,0 +1,14 @@
+button {
+	transition: all .3s;
+	color: #ffffff;
+	padding: 1em 2em;
+	line-height: .7em;
+	border: solid 1px #ffffff;
+	font-size: 1.5em;
+	cursor: pointer;
+	background: transparent;
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.24);
+	}
+}
