@@ -1,0 +1,105 @@
+@import '../../../commons/commons';
+
+.services-studios {
+
+	@include article();
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+
+
+		.grid-icon {
+			color: $gray;
+			font-size: 1.2em;
+
+			@include center();
+			flex-direction: column;
+
+			@include bp(lg) {
+				padding: 2em;
+			}
+
+			@include bp(md) {
+				padding: 1.5em;
+			}
+
+			@include bp(sm) {
+				padding: 1em;
+			}
+
+			@include bp(xs) {
+				padding: 1.2em;
+			}
+		}
+
+		@include padding-text();
+
+		padding-top: 5em;
+	}
+
+	&__header {
+
+	}
+
+	&__footer {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+
+		&-header {
+			font-size: 2em;
+			color: #fff;
+			font-weight: 100;
+
+			background: url("/static/images/home-header.svg") no-repeat center center fixed;
+
+			@include padding-text();
+
+			padding-top: 4em;
+			padding-bottom: 4em;
+
+			@include bp(xs) {
+				width: initial;
+				font-size: 1.5em;
+				text-align: center;
+			}
+		}
+
+		&-content {
+			height: 50vh;
+			@include center();
+
+			@include bp(xs) {
+				height: 40vh;
+			}
+
+			img {
+				height: 30vh;
+				@include bp(sm) {
+					height: 20vw;
+				}
+				@include bp(xs) {
+					height: 25vw;
+				}
+			}
+		}
+	}
+
+	.grid-icons {
+		align-items: baseline;
+	}
+	.grid-icon {
+		width: 24%;
+
+		@include bp(xs) {
+		width: 35%;
+		}
+		&__body {
+			text-align: center;
+		}
+	}
+
+}

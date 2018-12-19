@@ -1,0 +1,70 @@
+@import '../../../commons/commons';
+
+.home-header-services {
+
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5em;
+	background: url("/static/images/services-bg.svg") no-repeat center center fixed;
+	overflow: hidden;
+	background-size: cover;
+	height: 100vh;
+	padding-left: 2%;
+
+	@include bp(xs) {
+		height: 80vh;
+	}
+
+	&__title {
+		color: $white;
+		text-align: center;
+		font-size: 3.6em;
+		font-weight: 100;
+		letter-spacing: -3px;
+
+		@include bp(xs) {
+			font-size: 2em;
+		}
+	}
+
+	&__subtitle {
+		padding-top: .5em;
+		font-size: 1.6em;
+		font-weight: 100;
+
+		color: $white;
+		text-align: center;
+		letter-spacing: -1px;
+
+		@include bp(xs) {
+			padding-top: 2em;
+			font-size: 1em;
+		}
+	}
+
+	&__scroll-down {
+		border-radius: 50%;
+		font-size: 2em;
+		height: .5em;
+		width: .5em;
+		position: absolute;
+		bottom: 20vh;
+
+		&:before {
+			background: url('/static/images/arrow-down.svg') no-repeat;
+			content: '';
+			position: absolute;
+			top: 9px;
+			left: 6px;
+			padding: 10px;
+		}
+	}
+
+	&__lear-more {
+		padding-top: 5em;
+	font-size: .5em;
+	}
+}

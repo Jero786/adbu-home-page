@@ -1,0 +1,56 @@
+@import '../../../commons/commons';
+
+.organization-learn-more {
+	@include article();
+
+	background: url('/static/images/agile-banner.svg') no-repeat center center fixed;
+	background-size: cover;
+	position: relative;
+
+	&__title {
+		color: #fff;
+		font-size: 4em;
+		font-weight: 100;
+		padding-top: 1em;
+		z-index: 5;
+	}
+
+	&__description {
+		@include description-article();
+		@include padding-text();
+		padding: 1em;
+		z-index: 5;
+		color: #fff;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 7em;
+
+		align-items: center;
+		text-align: center;
+		color: $white;
+		max-width: 600px;
+
+		width: 100%;
+	}
+
+	&__button {
+		z-index: 5;
+	}
+
+	&__bg {
+		position: absolute;
+		background: url('/static/images/agile-banner.svg') no-repeat center center fixed;
+		background-size: cover;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		filter: blur(9px);
+		opacity: .8;
+	}
+
+}
