@@ -1,4 +1,7 @@
+// Resources
 import './OrganizationHeader.scss';
+
+// Libs
 import React from 'react';
 
 export default class ServicesHeader extends React.PureComponent {

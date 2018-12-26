@@ -1,27 +1,60 @@
 @import '../../../commons/commons';
 
-.organization-learn-more {
+.organization-manifest {
 	@include article();
 
-	background: url('/static/images/agile-banner.svg') no-repeat center center fixed;
-	background-size: cover;
 	position: relative;
 
+	.img-computer {
+		position: absolute;
+		left: -20vw;
+		height: 20vw;
+	}
+
+	.img-phone {
+		position: absolute;
+		right: 5%;
+		bottom: -40px;
+		height: 30vw;
+		z-index: -1;
+	}
+
 	&__title {
-		color: #fff;
+		color: $gray;
 		font-size: 4em;
 		font-weight: 100;
 		padding-top: 2em;
-		margin-bottom: -.5em;
 		z-index: 5;
 	}
 
 	&__description {
-		@include description-article();
-		@include padding-text();
-		padding: 1em;
+		display: flex;
 		z-index: 5;
-		color: #fff;
+		color: $gray;
+
+		@include bp(xs) {
+			flex-direction: column;
+		}
+
+		ul, li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			text-align: left;
+		}
+
+		li {
+			padding: 1em;
+
+			&:before {
+				margin-right: .5em;
+				content: '';
+				background: url('/static/images/blue-check.svg') no-repeat center center ;
+				background-size: .9em;
+				padding: 1em;
+				height: 10em;
+			}
+		}
 	}
 
 	&__body {

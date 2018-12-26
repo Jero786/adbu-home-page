@@ -7,6 +7,7 @@ import Layout from 'components/layout/layout';
 import ContactUs from 'components/home-page/contact-us/ContactUs';
 import Footer from 'components/footer/Footer';
 import OrganizationLearnMore from 'components/organization-page/organization-learn-more/OrganizationLearnMore';
+import OrganizationManifest from 'components/organization-page/organization-manifest/OrganizationManifest';
 
 
 export default class HomePage extends React.PureComponent {
@@ -17,6 +18,7 @@ export default class HomePage extends React.PureComponent {
       <OrganizationHeader />
       <OrganizationLearnMore />
       <OrganizationServices />
+      <OrganizationManifest />
       <ContactUs />
       <Footer />
     </Layout>
