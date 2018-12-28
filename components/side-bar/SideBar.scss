@@ -1,0 +1,19 @@
+@import "../../commons/commons";
+
+.adbu-sidebar {
+	position: fixed;
+	padding: 0;
+	z-index: 10;
+	right: -1000px;
+	top: 55px;
+	min-width: 200px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(73, 190, 237, 0.4588235294117647);
+	font-weight: 100;
+	transition: all 1s;
+
+	&.is-visible {
+		right: 0;
+	}
+}

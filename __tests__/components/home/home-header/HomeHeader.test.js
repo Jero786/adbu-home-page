@@ -1,7 +1,7 @@
 import React from 'react';
 import {expect} from 'chai';
 import {render} from 'enzyme';
-import HomeHeader from 'components/home/home-header/HomeHeader';
+import HomeHeader from 'components/home-page/home-header/HomeHeader';
 
 describe('HomeHeader', () => {
 

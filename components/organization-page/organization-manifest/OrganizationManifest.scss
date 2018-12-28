@@ -30,7 +30,7 @@
 	&__description {
 		display: flex;
 		z-index: 5;
-		color: $gray;
+		color: black;
 
 		@include bp(xs) {
 			flex-direction: column;
@@ -45,14 +45,16 @@
 
 		li {
 			padding: 1em;
+			font-size: 1.5em;
 
 			&:before {
 				margin-right: .5em;
 				content: '';
 				background: url('/static/images/blue-check.svg') no-repeat center center ;
-				background-size: .9em;
+				background-size: 1em;
 				padding: 1em;
-				height: 10em;
+				height: 8em;
+
 			}
 		}
 	}
@@ -66,7 +68,7 @@
 		align-items: center;
 		text-align: center;
 		color: $white;
-		max-width: 600px;
+		font-weight: 100;
 
 		width: 100%;
 	}

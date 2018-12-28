@@ -1,7 +1,7 @@
 import React from 'react';
 import {expect} from 'chai';
 import {render} from 'enzyme';
-import Studios from 'components/home/studios/Studios';
+import Studios from 'components/home-page/studios/Studios';
 
 describe('Studios', () => {
 

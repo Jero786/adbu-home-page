@@ -1,7 +1,7 @@
 import React from 'react';
 import {expect} from 'chai';
 import {render} from 'enzyme';
-import LearnMore from 'components/home/learn-more/LearnMore';
+import LearnMore from 'components/home-page/learn-more/LearnMore';
 
 describe('LearnMore', () => {
 

@@ -4,7 +4,7 @@ import {expect} from 'chai';
 import {render} from 'enzyme';
 
 // Components
-import ContactUs from 'components/home/contact-us/ContactUs';
+import ContactUs from 'components/home-page/contact-us/ContactUs';
 
 describe('ContactUs', () => {
 

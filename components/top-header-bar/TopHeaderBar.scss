@@ -1,7 +1,26 @@
 .adbu-top-header-bar {
 
 	display: flex;
-	position: relative;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	transition: all .5s;
+
+	&.is-sticky {
+		background-color: rgba(0, 0, 0, 0.68);
+		padding: 10px;
+
+		.adbu-top-header-bar__logo {
+			top: 25px;
+		}
+
+		.adbu-sidebar {
+			top: 76px;
+		}
+	}
 
 	&__logo {
 		background: url('/static/images/logo-white.svg') no-repeat;
@@ -10,6 +29,7 @@
 		z-index: 10;
 		top: 50px;
 		left: 50px;
+		transition: all .5s;
 	}
 
 	&__burger {
@@ -19,6 +39,10 @@
 		z-index: 10;
 		top: 50px;
 		right: 50px;
+
+		&:hover {
+			cursor: pointer;
+		}
 
 		&.is-open {
 			background: url('/static/images/menu-lines-open.svg') no-repeat;
