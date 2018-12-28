@@ -15,6 +15,7 @@
 
 	@include bp(xs) {
 		height: 80vh;
+		padding: 0 1em;
 	}
 
 	&__title {
@@ -25,7 +26,8 @@
 		letter-spacing: -3px;
 
 		@include bp(xs) {
-			font-size: 2em;
+			font-size: 1.5em;
+			padding: 0 2em;
 		}
 	}
 
@@ -51,6 +53,10 @@
 		width: .5em;
 		position: absolute;
 		bottom: 20vh;
+
+		@include bp(xs) {
+			bottom: 10vh;
+		}
 
 		&:before {
 			background: url('/static/images/arrow-down.svg') no-repeat;

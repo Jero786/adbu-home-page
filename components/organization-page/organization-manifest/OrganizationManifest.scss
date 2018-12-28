@@ -8,7 +8,11 @@
 	.img-computer {
 		position: absolute;
 		left: -20vw;
-		height: 20vw;
+		height: 15vw;
+
+		@include bp(xs) {
+			display: none;
+		}
 	}
 
 	.img-phone {
