@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 export default class GridIcons extends React.PureComponent {
 	render() {
-		const {children} = this.props;
+		const {children, className} = this.props;
 		return (
-  <div className="grid-icons">{children}</div>
+  <div className={`grid-icons ${className ? className : ''}`}>{children}</div>
 		);
 	}
 }

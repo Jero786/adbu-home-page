@@ -3,6 +3,7 @@ import './TopHeaderBar.scss';
 
 // Libs
 import React from 'react';
+import Link from 'next/link';
 
 // Components
 import SideBar from 'components/side-bar/SideBar';
@@ -35,7 +36,9 @@ export default class TopHeaderBar extends React.PureComponent {
 
 		return (
   <div className="adbu-top-header-bar">
-    <div className="adbu-top-header-bar__logo" />
+		<Link href="/">
+    	<div className="adbu-top-header-bar__logo" />
+		</Link>
     <Hamburger className="hidden-lg hidden-sm" onClick={this.onToggleSideBar} isActive={isSidebarVisible} />
     <SideBar isVisible={isSidebarVisible}>
       <SideBarItem link="/" displayName="Home" />

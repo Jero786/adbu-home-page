@@ -6,11 +6,16 @@
 	color: $white;
 
 	font-size: 1.4em;
-	background: url("/static/images/home-header.svg") center fixed;
+	background: url("https://ik.imagekit.io/cdnstorage786/home-header_WMfOfpinc.svg") center fixed;
 	height: 40vh;
+	background-size: cover;
+
+	@include bp(xlg) {
+		background-color: black;
+	}
 
 	&__logo {
-		background: url(/static/images/logo-white.svg) no-repeat;
+
 		padding: 40px;
 	}
 

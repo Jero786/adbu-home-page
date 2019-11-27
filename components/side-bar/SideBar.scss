@@ -16,6 +16,8 @@
 	@include bp(xs) {
 		font-size: .6em;
 		top: 76px;
+		background-color: rgba(73, 190, 237, 0.9);
+		font-weight: 500;
 	}
 
 	&.is-visible {

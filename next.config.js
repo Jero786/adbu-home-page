@@ -1,4 +1,5 @@
 const withSass = require('@zeit/next-sass');
+const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
 
 module.exports = {
   // some configuration
@@ -6,4 +7,15 @@ module.exports = {
   // another configuration
 };
 
-module.exports = withSass();
+module.exports = withSass({
+	webpack(config, options) {
+		const newConfig = { ...config };
+		newConfig.plugins = [
+			...config.plugins,
+			new FilterWarningsPlugin({
+				exclude: /mini-css-extract-plugin[^]*Conflicting order between:/,
+			}),
+		];
+		return newConfig;
+	}
+});

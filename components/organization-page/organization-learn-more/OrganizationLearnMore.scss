@@ -3,7 +3,7 @@
 .organization-learn-more {
 	@include article();
 
-	background: url('/static/images/agile-banner.svg') no-repeat center center fixed;
+	background: url('https://ik.imagekit.io/cdnstorage786/agile-banner_4j5JpjhjM.svg') no-repeat center center fixed;
 	background-size: cover;
 	position: relative;
 
@@ -44,7 +44,7 @@
 
 	&__bg {
 		position: absolute;
-		background: url('/static/images/agile-banner.svg') no-repeat center center fixed;
+		background: url('https://ik.imagekit.io/cdnstorage786/agile-banner_4j5JpjhjM.svg') no-repeat center center fixed;
 		background-size: cover;
 		top: 0;
 		bottom: 0;

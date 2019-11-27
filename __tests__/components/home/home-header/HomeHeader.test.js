@@ -27,10 +27,4 @@ describe('HomeHeader', () => {
 		expect(wrapper.find('.home-header__subtitle')).to.have.lengthOf(1);
 	});
 
-	it('should contain a scroll down button', function () {
-		const wrapper = render(<HomeHeader />);
-
-		expect(wrapper.find('.home-header__scroll-down')).to.have.lengthOf(1);
-	});
-
 });

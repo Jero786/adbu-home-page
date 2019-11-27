@@ -11,7 +11,6 @@ export default class HomeHeader extends React.PureComponent {
     <div className="home-header__subtitle">
 					DESIGN FOR YOUR APPS
     </div>
-    <div className="home-header__scroll-down" />
   </div>
 		);
 	}

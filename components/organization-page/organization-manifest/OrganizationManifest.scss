@@ -24,7 +24,7 @@
 	}
 
 	&__title {
-		color: $gray;
+		color: $white;
 		font-size: 4em;
 		font-weight: 100;
 		padding-top: 2em;
@@ -34,7 +34,7 @@
 	&__description {
 		display: flex;
 		z-index: 5;
-		color: black;
+		color: $white;
 
 		@include bp(xs) {
 			flex-direction: column;
@@ -54,11 +54,10 @@
 			&:before {
 				margin-right: .5em;
 				content: '';
-				background: url('/static/images/blue-check.svg') no-repeat center center ;
-				background-size: 1em;
+				background: url('/static/images/check-v2.svg') no-repeat center center ;
+				background-size: 1.8em;
 				padding: 1em;
-				height: 8em;
-
+				height: 9em;
 			}
 		}
 	}
@@ -68,7 +67,8 @@
 		flex-direction: column;
 		justify-content: center;
 		padding-bottom: 7em;
-
+		background: url('https://ik.imagekit.io/cdnstorage786/home-header_NG71Lljqt.svg') no-repeat center center fixed;
+		background-size: cover;
 		align-items: center;
 		text-align: center;
 		color: $white;
@@ -83,7 +83,7 @@
 
 	&__bg {
 		position: absolute;
-		background: url('/static/images/agile-banner.svg') no-repeat center center fixed;
+		background: url('https://ik.imagekit.io/cdnstorage786/agile-banner_4j5JpjhjM.svg') no-repeat center center fixed;
 		background-size: cover;
 		top: 0;
 		bottom: 0;

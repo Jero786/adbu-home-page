@@ -7,6 +7,7 @@ $gray: #808B97;
 $matisse: #1A6B9C;
 $firefly: #0F1F2F;
 $picton-blue: #49BEED;
+$max-content-width: 1400px;
 
 $padding-left-right: 12%;
 $padding-left-right-mobile: 5%;
@@ -85,8 +86,12 @@ $padding-left-right-mobile: 5%;
     }
 
     @else if $min == lg {
-      @media (min-width: 1200px) { @content; }       // Desktops Large
+      @media (min-width: 1200px) and (max-width: 2000px) { @content; }       // Desktops Large
     }
+
+		@else if $min == xlg {
+			@media (min-width: 2001px) { @content; }       // Desktops Large
+		}
   }
 
   @else if $type == number {

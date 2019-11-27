@@ -15,7 +15,6 @@ export default class HomePage extends React.PureComponent {
     <Layout>
       <HomeHeader />
       <LearnMore />
-      <Studios />
       <ContactUs />
       <Footer />
     </Layout>

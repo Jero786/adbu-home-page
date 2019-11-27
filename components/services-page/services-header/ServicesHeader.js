@@ -11,11 +11,6 @@ export default class ServicesHeader extends React.PureComponent {
     </div>
     <div className="home-header-services__subtitle">
 					Make your bussines grow
-
-    </div>
-
-    <div className="home-header-services__lear-more">
-      <button type="button">Lear more</button>
     </div>
   </div>
 		);

@@ -9,7 +9,6 @@ export default class OrganizationManifest extends React.PureComponent {
 	render() {
 		return (
   <article className="organization-manifest">
-    <img className="img-computer" src="/static/images/computer.svg" alt="" />
     <div className="organization-manifest__body">
       <h1 className="organization-manifest__title">ADBU Manifest</h1>
       <div className="organization-manifest__description">
@@ -28,7 +27,6 @@ export default class OrganizationManifest extends React.PureComponent {
         </ul>
       </div>
     </div>
-    <img className="img-phone" src="/static/images/phone.svg" alt="" />
   </article>
 		);
 	}

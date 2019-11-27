@@ -1,6 +1,6 @@
 @import '../../../commons/commons';
 
-.services-studios {
+.organization-studios {
 
 	@include article();
 
@@ -8,8 +8,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-
 
 		.grid-icon {
 			color: $gray;
@@ -35,8 +33,7 @@
 			}
 		}
 
-		@include padding-text();
-
+		max-width: $max-content-width;
 		padding-top: 5em;
 	}
 
@@ -54,7 +51,7 @@
 			color: #fff;
 			font-weight: 100;
 
-			background: url("/static/images/home-header.svg") no-repeat center center fixed;
+			background: url("https://ik.imagekit.io/cdnstorage786/home-header_WMfOfpinc.svg") no-repeat center center fixed;
 
 			@include padding-text();
 
@@ -95,10 +92,24 @@
 		width: 24%;
 
 		@include bp(xs) {
-		width: 35%;
+			width: 95%;
 		}
+
+		&__title {
+			@include bp(xs) {
+				font-size: 1.5em;
+			}
+		}
+
 		&__body {
 			text-align: center;
+			@include bp(xs) {
+				font-size: 1.2em;
+				img {
+					padding-top: 3em;
+					padding-bottom: 3em;
+				}
+			}
 		}
 	}
 

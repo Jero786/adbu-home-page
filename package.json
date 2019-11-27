@@ -21,10 +21,13 @@
     "@zeit/next-sass": "1.0.1",
     "classnames": "^2.2.6",
     "next": "^7.0.2-canary.21",
-    "next-optimized-images": "1.4.1",
     "node-sass": "4.9.3",
+    "css-loader": "^1.0.0",
     "react": "16.5.2",
-    "react-dom": "16.5.2"
+    "react-dom": "16.5.2",
+    "postcss-loader": "^3.0.0",
+    "extracted-loader": "^1.0.7",
+    "mini-css-extract-plugin": "^0.4.2"
   },
   "lint-staged": {
     "*.js": [
@@ -55,6 +58,7 @@
     "push-dir": "^0.4.1",
     "react-addons-test-utils": "15.6.2",
     "react-test-renderer": "16.2.0",
-    "sinon": "^6.1.5"
+    "sinon": "^6.1.5",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   }
 }
