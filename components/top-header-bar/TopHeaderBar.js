@@ -36,9 +36,9 @@ export default class TopHeaderBar extends React.PureComponent {
 
 		return (
   <div className="adbu-top-header-bar">
-		<Link href="/">
-    	<div className="adbu-top-header-bar__logo" />
-		</Link>
+    <Link href="/">
+      <div className="adbu-top-header-bar__logo" />
+    </Link>
     <Hamburger className="hidden-lg hidden-sm" onClick={this.onToggleSideBar} isActive={isSidebarVisible} />
     <SideBar isVisible={isSidebarVisible}>
       <SideBarItem link="/" displayName="Home" />

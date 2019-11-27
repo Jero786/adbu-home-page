@@ -28,7 +28,7 @@ More objects are becoming embedded with sensors and gaining the ability to commu
           <br />
 More objects are becoming embedded with sensors and gaining the ability to communicate. The resulting information networks promise to create new business models, improve business processes, and reduce costs and risks.
         </GridIcon>
-        <GridIcon title="TECHNOLOGY" imageSrc="/static/images/lamp.svg" className="services-studios__list-item-technology" >
+        <GridIcon title="TECHNOLOGY" imageSrc="/static/images/lamp.svg" className="services-studios__list-item-technology">
 							In adbu we count with engineers with experience
           <br />
 							in the most popular and also state of the art

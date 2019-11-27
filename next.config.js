@@ -8,7 +8,7 @@ module.exports = {
 };
 
 module.exports = withSass({
-	webpack(config, options) {
+	webpack(config) {
 		const newConfig = { ...config };
 		newConfig.plugins = [
 			...config.plugins,

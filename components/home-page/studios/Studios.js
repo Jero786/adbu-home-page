@@ -17,7 +17,7 @@ export default class Studios extends React.PureComponent {
       <GridIcons>
         <GridIcon title="MOBILE STUDIO" imageSrc="/static/images/studio-mobile.png" />
         <GridIcon title="QA STUDIO" imageSrc="/static/images/studios-qa.png" />
-				<GridIcon title="BIG DATA STUDIO" imageSrc="/static/images/studios-big-data.png" />
+        <GridIcon title="BIG DATA STUDIO" imageSrc="/static/images/studios-big-data.png" />
         <GridIcon title="CREATIVE STUDIO" imageSrc="/static/images/studio-creative.png" />
       </GridIcons>
     </div>
