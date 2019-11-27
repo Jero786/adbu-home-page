@@ -9,9 +9,10 @@
 	min-width: 200px;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(73, 190, 237, 0.4588235294117647);
+	background-color: rgba(73, 190, 237, 0.8);
 	font-weight: 100;
 	transition: all 1s;
+	font-size: 0.8em;
 
 	@include bp(xs) {
 		font-size: .6em;
