@@ -3,5 +3,6 @@
 .DS_Store/
 package-lock.json
 node_modules
+out/
 coverage/
 coverage/lcov-report

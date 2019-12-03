@@ -1,0 +1,9 @@
+{
+  "name": "ADBU Web Page",
+  "version": 1,
+  "build": [
+    { "src": "*.html", "use": "@now/static"},
+    { "src": "*.js", "use": "@now/node"}
+  ]
+}
+
